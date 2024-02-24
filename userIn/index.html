@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="innerText">
+            <input id="userInput" type="text">
+            <button onclick="showMes()">Display</button>
+        </div>
+        <p class="output" id="output"></p>
+    </div>
+    <script>
+        function showMes(){
+            let userInput = document.getElementById("userInput")
+            
+            if(userInput.value){
+                document.getElementById("output").innerHTML = userInput.value
+            }else{
+                alert("Isn't text")
+            }
+            userInput.value = ""
+        }
+    </script>
+</body>
+</html>

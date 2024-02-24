@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button{
+            padding: 7px 15px;
+            cursor: pointer;
+        }
+        .box{
+            width: 150px;
+        }
+    </style>
+    <div class="box">
+        <button onclick="toggleVisibility(this)" >Hide</button>
+        <p id="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, repellat necessitatibus. Assumenda error quae, dolores, ab magnam beatae, sequi incidunt quos quis mollitia quisquam. Commodi quia quasi atque voluptates inventore?</p>
+    </div>
+    <script>
+        function toggleVisibility(button) {
+            var paragraph = document.getElementById("paragraph");
+            if (paragraph.style.display === "block" || paragraph.style.display == "") {
+                paragraph.style.display = "none";
+                button.textContent = "Show";
+            }else{
+                paragraph.style.display = "block";
+                button.textContent = "Hide";
+            }
+        }
+    </script>
+</body>
+</html>

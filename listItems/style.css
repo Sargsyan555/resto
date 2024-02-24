@@ -1,0 +1,14 @@
+.list ul{
+    list-style: none;
+    color: black;
+    padding: 30px;
+    width: 120px;
+    text-align: center;
+
+}
+.list ul li{
+    font-size: 34px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    margin: 15px 15px;
+}

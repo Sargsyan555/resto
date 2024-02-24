@@ -1,0 +1,17 @@
+nav{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgba(163, 160, 160, 0.1);
+    padding: 20px;
+
+}
+nav > a{
+    text-decoration: none;
+    color: rgb(rgb(24, 22, 22), green, blue);
+    font-size: 30px;
+
+}
+nav > a:hover{
+    color: rgb(122, 18, 18);
+}
